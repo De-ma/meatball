@@ -1,0 +1,6 @@
+framework module Pods_meatball {
+  umbrella header "Pods-meatball-umbrella.h"
+
+  export *
+  module * { export * }
+}
