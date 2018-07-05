@@ -2,32 +2,37 @@ import Foundation
 import Moya
 
 enum WeatherService {
-    case getWeather
+    case getWeather(latitude: String, longitude: String)
 }
 
 extension WeatherService: TargetType {
     var baseURL: URL {
-        <#code#>
+        return URL(string: "https://api.darksky.net/forecase/a6682acd877238fd5d632f038320c841/")!
     }
     
     var path: String {
-        <#code#>
+        switch self {
+        case let .getWeather(latitude, longitude):
+            return(")
+        }
     }
     
     var method: Moya.Method {
-        <#code#>
+        return .get
     }
     
     var sampleData: Data {
-        <#code#>
+        var something: Data
+        something = try! JSONEncoder().encode("uh")
+        return something
     }
     
     var task: Moya.Task {
-        <#code#>
+        return .requestPlain
     }
     
     var headers: [String : String]? {
-        <#code#>
+        return [:]
     }
     
     
