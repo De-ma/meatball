@@ -13,7 +13,7 @@ extension WeatherService: TargetType {
     var path: String {
         switch self {
         case let .getWeather(latitude, longitude):
-            return(")
+            return("\(latitude),\(longitude)?exclude=minutely,hourly,daily,flags&units=si")
         }
     }
     

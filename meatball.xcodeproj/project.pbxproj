@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E3E531920EEDE61004AA287 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3E531820EEDE61004AA287 /* CurrentWeather.swift */; };
 		9C5A2C9DACA3F7E8CB7F710A /* Pods_meatballUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3462E61BB051C7535216F4EA /* Pods_meatballUITests.framework */; };
 		A2249C3D688ABD45E7A8ADCF /* Pods_meatball.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E7426B269AA78796EE05C74 /* Pods_meatball.framework */; };
 		B39C0B3520EC532800C46A0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39C0B3420EC532800C46A0A /* AppDelegate.swift */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		11E64840D8FE29264893A308 /* Pods-meatballTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meatballTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-meatballTests/Pods-meatballTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2E3E531820EEDE61004AA287 /* CurrentWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
 		3462E61BB051C7535216F4EA /* Pods_meatballUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_meatballUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E7426B269AA78796EE05C74 /* Pods_meatball.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_meatball.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		61C30CC9825F259ADBF321D9 /* Pods-meatball.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meatball.release.xcconfig"; path = "Pods/Target Support Files/Pods-meatball/Pods-meatball.release.xcconfig"; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				B39C0B6820EC543700C46A0A /* WeatherService.swift */,
+				2E3E531820EEDE61004AA287 /* CurrentWeather.swift */,
 				B39C0B3420EC532800C46A0A /* AppDelegate.swift */,
 				B39C0B3620EC532800C46A0A /* ViewController.swift */,
 				B39C0B3820EC532800C46A0A /* Main.storyboard */,
@@ -387,6 +390,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B39C0B6920EC543800C46A0A /* WeatherService.swift in Sources */,
+				2E3E531920EEDE61004AA287 /* CurrentWeather.swift in Sources */,
 				B39C0B3720EC532800C46A0A /* ViewController.swift in Sources */,
 				B39C0B3D20EC532800C46A0A /* meatball.xcdatamodeld in Sources */,
 				B39C0B3520EC532800C46A0A /* AppDelegate.swift in Sources */,

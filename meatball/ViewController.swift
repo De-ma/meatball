@@ -1,18 +1,17 @@
-//
-//  ViewController.swift
-//  meatball
-//
-//  Created by Dema Abu Adas on 2018-07-03.
-//  Copyright © 2018 Dema Abu Adas. All rights reserved.
-//
-
 import UIKit
 import CoreLocation
+import Moya
 
 class ViewController: UIViewController {
 
     @IBOutlet weak var latLabel: UILabel!
     @IBOutlet weak var longLabel: UILabel!
+
+    var currentLocation: CLLocation?
+    let locationManager = CLLocationManager()
+
+    var latitude: String?
+    var longitude: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,16 +24,21 @@ class ViewController: UIViewController {
     }
 
     func startReceivingVisitChanges() {
-        let locationManager = CLLocationManager()
-        var currentLocation: CLLocation?
         locationManager.requestWhenInUseAuthorization()
 
-        if (CLLocationManager.authorizationStatus() != .denied) {
+        if (CLLocationManager.authorizationStatus() == .authorizedAlways || CLLocationManager.authorizationStatus() == .authorizedWhenInUse) {
             currentLocation = locationManager.location
+            latitude = "\(currentLocation?.coordinate.latitude)"
+            longitude = "\(currentLocation?.coordinate.longitude)"
+            getTemperature()
         }
+    }
 
-        latLabel.text = "\(String(describing: currentLocation?.coordinate.latitude))"
-        longLabel.text = "\(String(describing: currentLocation?.coordinate.longitude))"
+    func getTemperature() {
+        let WeatherServiceProvider = MoyaProvider<WeatherService>()
+        WeatherServiceProvider.request(.getWeather(latitude: latitude!, longitude: longitude!)) { result in
+            print(result.value)
+        }
     }
 }
 
