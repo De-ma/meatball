@@ -10,6 +10,7 @@
 		2E3E531920EEDE61004AA287 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3E531820EEDE61004AA287 /* CurrentWeather.swift */; };
 		9C5A2C9DACA3F7E8CB7F710A /* Pods_meatballUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3462E61BB051C7535216F4EA /* Pods_meatballUITests.framework */; };
 		A2249C3D688ABD45E7A8ADCF /* Pods_meatball.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E7426B269AA78796EE05C74 /* Pods_meatball.framework */; };
+		B36AF2A121699B300090CF99 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36AF2A021699B300090CF99 /* WeatherModel.swift */; };
 		B39C0B3520EC532800C46A0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39C0B3420EC532800C46A0A /* AppDelegate.swift */; };
 		B39C0B3720EC532800C46A0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39C0B3620EC532800C46A0A /* ViewController.swift */; };
 		B39C0B3A20EC532800C46A0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B39C0B3820EC532800C46A0A /* Main.storyboard */; };
@@ -49,6 +50,7 @@
 		68139FAE92EF44BAEE5B4FFB /* Pods-meatball.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meatball.debug.xcconfig"; path = "Pods/Target Support Files/Pods-meatball/Pods-meatball.debug.xcconfig"; sourceTree = "<group>"; };
 		684E13AE1280C1E32BEEDEDB /* Pods-meatballUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meatballUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-meatballUITests/Pods-meatballUITests.release.xcconfig"; sourceTree = "<group>"; };
 		68709CC20C9EB980FDA7FE13 /* Pods-meatballTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meatballTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-meatballTests/Pods-meatballTests.release.xcconfig"; sourceTree = "<group>"; };
+		B36AF2A021699B300090CF99 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 		B39C0B3120EC532800C46A0A /* meatball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = meatball.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B39C0B3420EC532800C46A0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B39C0B3620EC532800C46A0A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				B39C0B6820EC543700C46A0A /* WeatherService.swift */,
+				B36AF2A021699B300090CF99 /* WeatherModel.swift */,
 				2E3E531820EEDE61004AA287 /* CurrentWeather.swift */,
 				B39C0B3420EC532800C46A0A /* AppDelegate.swift */,
 				B39C0B3620EC532800C46A0A /* ViewController.swift */,
@@ -396,6 +399,7 @@
 				2E3E531920EEDE61004AA287 /* CurrentWeather.swift in Sources */,
 				B39C0B3720EC532800C46A0A /* ViewController.swift in Sources */,
 				B39C0B3D20EC532800C46A0A /* meatball.xcdatamodeld in Sources */,
+				B36AF2A121699B300090CF99 /* WeatherModel.swift in Sources */,
 				B39C0B3520EC532800C46A0A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
