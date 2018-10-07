@@ -6,12 +6,14 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var latLabel: UILabel!
     @IBOutlet weak var longLabel: UILabel!
+    @IBOutlet weak var currentWeather: UILabel!
+
 
     var currentLocation: CLLocation?
     let locationManager = CLLocationManager()
 
-    var latitude: String?
-    var longitude: String?
+    var latitude: Double?
+    var longitude: Double?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,16 +30,19 @@ class ViewController: UIViewController {
 
         if (CLLocationManager.authorizationStatus() == .authorizedAlways || CLLocationManager.authorizationStatus() == .authorizedWhenInUse) {
             currentLocation = locationManager.location
-            latitude = "\(currentLocation?.coordinate.latitude)"
-            longitude = "\(currentLocation?.coordinate.longitude)"
+            latitude = currentLocation?.coordinate.latitude
+            longitude = currentLocation?.coordinate.longitude
             getTemperature()
         }
     }
 
     func getTemperature() {
         let WeatherServiceProvider = MoyaProvider<WeatherService>()
-        WeatherServiceProvider.request(.getWeather(latitude: latitude!, longitude: longitude!)) { result in
-            print(result.value)
+        if let lat = latitude, let long = longitude {
+            WeatherServiceProvider.request(.getWeather(latitude: lat, longitude: long)) { result in
+                print(result.value!)
+    //            currentWeather = result.value?.data
+            }
         }
     }
 }

@@ -247,13 +247,16 @@
 				TargetAttributes = {
 					B39C0B3020EC532800C46A0A = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 					};
 					B39C0B4720EC532A00C46A0A = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 						TestTargetID = B39C0B3020EC532800C46A0A;
 					};
 					B39C0B5220EC532A00C46A0A = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 						TestTargetID = B39C0B3020EC532800C46A0A;
 					};
 				};
@@ -577,7 +580,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = dema.meatball;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -596,7 +599,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = dema.meatball;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -616,7 +619,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = dema.meatballTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/meatball.app/meatball";
 			};
@@ -637,7 +640,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = dema.meatballTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/meatball.app/meatball";
 			};
@@ -657,7 +660,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = dema.meatballUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = meatball;
 			};
@@ -677,7 +680,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = dema.meatballUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = meatball;
 			};

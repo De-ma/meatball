@@ -6,7 +6,7 @@ target 'meatball' do
   use_frameworks!
 
   # Pods for meatball
-  pod 'Moya', '~> 11.0'
+  pod 'Moya'
 
   target 'meatballTests' do
     inherit! :search_paths
