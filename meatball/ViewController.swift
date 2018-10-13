@@ -32,6 +32,8 @@ class ViewController: UIViewController {
             currentLocation = locationManager.location
             latitude = currentLocation?.coordinate.latitude
             longitude = currentLocation?.coordinate.longitude
+            print(latitude)
+            print(longitude)
             getTemperature()
         }
     }
@@ -40,10 +42,14 @@ class ViewController: UIViewController {
         let WeatherServiceProvider = MoyaProvider<WeatherService>()
         if let lat = latitude, let long = longitude {
             WeatherServiceProvider.request(.getWeather(latitude: lat, longitude: long)) { result in
-                print(result.value!)
-    //            currentWeather = result.value?.data
+                do {
+                    let decoder = JSONDecoder()
+                    let data = try decoder.decode(WeatherModel.self, from: (result.value?.data)!)
+                    print(data)
+                } catch let err {
+                    print("Err", err)
+                }
             }
         }
     }
 }
-
